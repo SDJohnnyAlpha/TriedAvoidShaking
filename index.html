@@ -106,7 +106,7 @@ function dynamicLoadPlaces(position) {
 
 function renderPlaces(places) {
     let scene = document.querySelector('a-scene');
-	let distanceMsg = document.querySelector('[gps-entity-place]').getAttribute('distanceMsg');
+	//let distanceMsg = document.querySelector('[gps-entity-place]').getAttribute('distanceMsg');
 
     places.forEach((place) => {
         const latitude = place.location.lat;
@@ -145,7 +145,7 @@ function renderPlaces(places) {
                 const label = document.createElement('span');
                 const container = document.createElement('div');
                 container.setAttribute('id', 'place-label');
-                label.innerText = distanceMsg;
+                label.innerText = name;
                 container.appendChild(label);
                 document.body.appendChild(container);
 
