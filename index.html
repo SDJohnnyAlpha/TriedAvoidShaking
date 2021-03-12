@@ -23,14 +23,14 @@
         ></a-image> -->
 
         <!-- ~ 0m far -->
-        <a-image src="place.png" gps-entity-place="latitude: 44.504348; longitude: 11.301027;"
+        <a-image src="place.png" gps-entity-place="latitude: 52.2667465209961; longitude: -7.09122848510742;"
             ></a-image>
 
         <!-- using gpsMinDistance: 5 => update GPS only if user moves by 5 meters or more => avoid shaking for near objects -->
         <!-- using accelerationToMove: 1.0 => 'smooth' inertial sensors precision precision in order to avoid distant places shaking -->
         <a-camera
             rotation-reader
-            gps-camera="simulateLatitude: 52.2667465209961; simulateLongitude: -7.09122848510742; gpsMinDistance: 10;"
+            gps-camera="gpsMinDistance: 10;"
         >
 		</a-camera>
 	</a-scene>
